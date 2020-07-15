@@ -24,6 +24,8 @@ This setup is expecting a running Postgres server.
 For convenience, you'll find a docker-compose.yml file in the project root which will bootstrap a Dockerized Postgres database.
 It can be started running following command. Make sure you run this before starting the application ;-)
 
+Note, an Open Weather API key can be found here: https://openweathermap.org/appid
+
 docker-compose up
 
 # Local development
