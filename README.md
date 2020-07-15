@@ -1,6 +1,8 @@
 # Weather service assignment
 
 Service enabling to lookup weather information and have the result persisted in a database.
+The service will use an API from the Open Weather API (https://openweathermap.org/).
+Before you can use the service, you'll first have to request an API key (https://openweathermap.org/appid).  
 
 # Starting the service
 
@@ -9,7 +11,7 @@ When bootstrapping the service, following properties are expected to be passed a
 * spring.datasource.username
 * spring.datasource.password
 * spring.datasource.url
-* openweather-api.token
+* openweather-api.token (this represents the API key from openweathermap)
 
 Example:
 
