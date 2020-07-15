@@ -1,9 +1,15 @@
+# Weather service assignment
+
+Service enabling to lookup weather information and have the result persisted in a database.
+
+# Starting the service
+
 When bootstrapping the service, following properties are expected to be passed as VM arguments:
 
-spring.datasource.username
-spring.datasource.password
-spring.datasource.url
-openweather-api.token
+* spring.datasource.username
+* spring.datasource.password
+* spring.datasource.url
+* openweather-api.token
 
 Example:
 
@@ -11,7 +17,7 @@ mvn spring-boot:run
     -Dspring.datasource.username=myassignment 
     -Dspring.datasource.password=myassignment 
     -Dspring.datasource.url=jdbc:postgresql://localhost:5432/myassignment 
-    -Dopenweather-api.token=<<Your weather API token>>
+    -Dopenweather-api.token=12345
 
 This setup is expecting a running Postgres server.
 
@@ -20,6 +26,8 @@ It can be started running following command. Make sure you run this before start
 
 docker-compose up
 
+# Local development
+
 For local development, you can use the "dev" profile in order to skip passing the sensitive settings to the service.
 Meaning, you can start the service using:
 
@@ -27,7 +35,7 @@ mvn spring-boot:run -Dspring.profiles.active=dev
 
 Note that this profile is not the default one.
 
-Example endpoint consumption:
+# Example endpoint consumption:
 
 http://localhost:8080/v1/weather?city=Utrecht
 
