@@ -11,7 +11,7 @@ mvn spring-boot:run
     -Dspring.datasource.username=myassignment 
     -Dspring.datasource.password=myassignment 
     -Dspring.datasource.url=jdbc:postgresql://localhost:5432/myassignment 
-    -Dopenweather-api.token=52637c5747139edd44f2276c22f204b4
+    -Dopenweather-api.token=<Your weather API token>
 
 This setup is expecting a running Postgres server.
 

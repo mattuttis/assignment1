@@ -2,7 +2,7 @@
 # Can be activated by passing -Dspring.profiles.active=dev
 openweather-api:
 # for dev we allow passing the api token via a property file
-  token: 52637c5747139edd44f2276c22f204b4
+  token: <<Replace with your token>>
 
 spring:
   datasource:

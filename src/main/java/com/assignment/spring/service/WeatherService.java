@@ -5,6 +5,9 @@ import com.assignment.spring.repository.WeatherRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * Orchestration service delegating tasks to dedicated services.
+ */
 @Service
 public class WeatherService {
     private final ApiConsumerService apiConsumerService;
