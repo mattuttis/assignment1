@@ -33,7 +33,7 @@ Meaning, you can start the service using:
 
 mvn spring-boot:run -Dspring.profiles.active=dev
 
-Note that this profile is not the default one.
+Note that this profile is not the default one. Also, provide your own API key into the application-dev.properties file.
 
 # Example endpoint consumption:
 
