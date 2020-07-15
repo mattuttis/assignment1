@@ -1,0 +1,23 @@
+# Convenience property file for bypassing passing VM arguments
+# Can be activated by passing -Dspring.profiles.active=dev
+openweather-api:
+# for dev we allow passing the api token via a property file
+  token: 52637c5747139edd44f2276c22f204b4
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/myassignment
+    username: myassignment
+    password: myassignment
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true

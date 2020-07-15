@@ -1,0 +1,3 @@
+openweather-api:
+  # for dev we allow passing the api token via a property file
+  token: 123

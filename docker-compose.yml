@@ -1,0 +1,16 @@
+#
+# Following docker compose configuration can be used to simulate "production" locally.
+# It will start the Postgres dependency only.
+#
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:9.6.18
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=myassignment
+      - POSTGRES_PASSWORD=myassignment
+      - POSTGRES_DB=myassignment
